@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /data || exit
+cd data || exit
 
 TEMP_DIR=$(mktemp -d /tmp/task1XXX)
 
