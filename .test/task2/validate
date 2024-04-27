@@ -47,7 +47,7 @@ function test_solution() {
     echo "$ACTUAL"
     exit $ACTUAL_EXIT
   fi
-  diff --color=always -U 1000 "$EXPECTED" "$ACTUAL" \
+  diff --color=always -U 1000 <(echo "$EXPECTED") <(echo "$ACTUAL") \
     || (echo && echo "Test structure:" && tree && exit 1)
 }
 
